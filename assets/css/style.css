@@ -166,6 +166,7 @@ li{
     font-weight: 400;
     color: #FF8A63;
     line-height: 20px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 11px;
 }
@@ -174,6 +175,7 @@ li{
     font-weight: 400;
     line-height: 43px;
     color: #45525B;
+    letter-spacing: normal;
     text-transform: none;
 }
 .requirements_subtitle{
@@ -190,8 +192,15 @@ li{
     margin-right: 32px;
 }
 .requirements_block{
-    padding: 21px 83px 30px 21px;
-    background: ;
+    width: 300px;
+    height: 167px;
+    padding: 21px 0 0 21px;
+    border: 1px solid transparent;
+}
+.requirements_block:hover{
+    background-color: #FAFAFC;
+    border-radius: 10px;
+    border: 1px solid #CACCD133;
 }
 .requirements_block_text{
     font-size: 14px;
@@ -204,4 +213,102 @@ li{
     text-transform: none;
     letter-spacing: normal;
     color: #6F7278;
+}
+.sn3_pic{
+    margin-bottom: 10.25px;
+}
+/* section4 */
+.picture{
+    background: url("../img/section4_bg.jpg") no-repeat center center / cover;
+    padding: 230px 0 350px 0;
+    height: 600px;
+}
+.picture_wrapper{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.picture_wrapper:hover{
+    opacity: 100%;
+}
+.picture_texts{
+    align-items: center;
+    margin-right: 90px;
+}
+.picture_title{
+    font-size: 14px;
+    font-weight: 400;
+    color: #45525B;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.picture_subtitle{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #292C32;
+    margin-bottom: 9px;
+}
+.picture_view{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: #45525B;
+}
+.sn4_arrow{
+    margin-left: 6px;
+    animation: sn4_arrow 2.5s linear infinite;
+}
+  
+@keyframes sn4_arrow{
+    0%{
+        transform: translateX(30px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(30px);
+    }
+}
+/* section5 */
+.current{
+    padding: 100px 0 100px 0;
+    background-color: #FAFAFC;
+}
+.current_wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.current_title{
+    font-size: 14px;
+    font-weight: 400;
+    color: #FF8A63;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+.current_title span{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    color: #45525B;
+    letter-spacing: normal;
+    text-transform: none;
+}
+.current_subtitle{
+    width: 574px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6F7278;
+}
+.current_block{
+    width: 379px;
+    height: 385px;
+    background-color: white;
 }
